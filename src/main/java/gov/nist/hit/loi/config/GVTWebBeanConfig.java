@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-public class LOIWebBeanConfig {
+public class GVTWebBeanConfig {
 
 	@Bean
 	  public ResourcebundleLoader resourcebundleLoader() {
