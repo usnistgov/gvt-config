@@ -15,6 +15,7 @@
   		<artifactId>gvt-core</artifactId>
   		<version>${gvtcore.version}</version>
   	</dependency>	
+
   	<dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-core</artifactId>
@@ -46,7 +47,6 @@
 	    </plugins>
   	</build>
   	<properties>
-		<hitcorehl7v2.version>1.0.10-SNAPSHOT</hitcorehl7v2.version>
 		<gvtcore.version>1.0.0-SNAPSHOT</gvtcore.version>
 		<resourcebundle.version>1.0.0-SNAPSHOT</resourcebundle.version>
 	</properties>

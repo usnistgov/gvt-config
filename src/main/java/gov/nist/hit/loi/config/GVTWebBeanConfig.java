@@ -2,25 +2,30 @@ package gov.nist.hit.loi.config;
 
 
 
+import java.io.IOException;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageParser;
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageParserImpl;
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageValidator;
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageValidatorImpl;
-import gov.nist.hit.core.hl7v2.service.HL7V2ResourcebundleLoaderImpl;
+import gov.nist.hit.core.hl7v2.service.HL7V2ResourceLoaderImpl;
 import gov.nist.hit.core.hl7v2.service.HL7V2ValidationReportConverter;
 import gov.nist.hit.core.hl7v2.service.HL7V2ValidationReportConverterImpl;
-import gov.nist.hit.core.service.ResourcebundleLoader;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import gov.nist.hit.core.service.ResourceLoader;
+import gov.nist.hit.core.service.exception.ProfileParserException;
 
 
 @Configuration
 public class GVTWebBeanConfig {
 
 	@Bean
-	  public ResourcebundleLoader resourcebundleLoader() {
-	      return new HL7V2ResourcebundleLoaderImpl();
+	  public ResourceLoader resourceLoader() throws JsonProcessingException, ProfileParserException, IOException {
+	      return new HL7V2ResourceLoaderImpl();
 	  }
 
 	@Bean
