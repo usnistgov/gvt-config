@@ -1,4 +1,4 @@
-package gov.nist.hit.loi.config;
+package gov.nist.hit.gvt.config;
 
 import gov.nist.hit.core.service.ResourcebundleLoader;
 import gov.nist.hit.core.service.exception.ProfileParserException;

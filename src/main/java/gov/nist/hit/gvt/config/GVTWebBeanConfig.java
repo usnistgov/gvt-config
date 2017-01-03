@@ -1,4 +1,4 @@
-package gov.nist.hit.loi.config;
+package gov.nist.hit.gvt.config;
 
 
 
