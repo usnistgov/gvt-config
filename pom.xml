@@ -57,6 +57,24 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<!-- enable filtering for app-config.properties -->
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>app-config.properties</include>
+				</includes>
+			</resource>
+			<resource>
+				<!-- disable filtering for all other resources -->
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+				<excludes>
+					<exclude>app-config.properties</exclude>
+				</excludes>
+			</resource>
+		</resources>
 	</build>
 	
 	<scm>
