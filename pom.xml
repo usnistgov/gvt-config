@@ -16,7 +16,7 @@
 			<groupId>gov.nist.hit.gvt</groupId>
 			<artifactId>gvt-core</artifactId>
 			<version>${gvtcore.version}</version>
-		</dependency>
+		</dependency>		
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
@@ -95,6 +95,6 @@
 	
 	<properties>
 		<gvtcore.version>1.0.0-SNAPSHOT</gvtcore.version>
-		<resourcebundle.version>1.0.0-SNAPSHOT</resourcebundle.version>
+		<resourcebundle.version>1.0.1-SNAPSHOT</resourcebundle.version>
 	</properties>
 </project>
