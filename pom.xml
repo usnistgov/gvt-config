@@ -40,7 +40,7 @@
 		<dependency>
 			 <groupId>gov.nist.hit.gvt</groupId>
 			  <artifactId>gvt-plugins</artifactId>
-			  <version>0.0.1-SNAPSHOT</version>
+			  <version>${plugins.version}</version>
 		</dependency>
 		
 	</dependencies>
@@ -89,17 +89,18 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/releases</url>
+			<url>https://hit-nexus.nist.gov/repository/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Internal Snapshots</name>
-			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/snapshots</url>
+			<url>https://hit-nexus.nist.gov/repository/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 	
 	<properties>
 		<gvtcore.version>1.0.0-SNAPSHOT</gvtcore.version>
 		<resourcebundle.version>1.0.1-SNAPSHOT</resourcebundle.version>
+		<plugins.version>1.0.0-SNAPSHOT</plugins.version>
 	</properties>
 </project>

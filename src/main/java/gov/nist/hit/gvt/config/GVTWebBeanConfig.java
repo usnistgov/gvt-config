@@ -10,10 +10,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageParser;
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageValidator;
 import gov.nist.hit.core.hl7v2.service.HL7V2ResourceLoader;
+import gov.nist.hit.core.hl7v2.service.HL7V2ValidationConfigurationService;
 import gov.nist.hit.core.hl7v2.service.HL7V2ValidationReportConverter;
 import gov.nist.hit.core.hl7v2.service.impl.HL7V2MessageParserImpl;
 import gov.nist.hit.core.hl7v2.service.impl.HL7V2MessageValidatorImpl;
 import gov.nist.hit.core.hl7v2.service.impl.HL7V2ResourceLoaderImpl;
+import gov.nist.hit.core.hl7v2.service.impl.HL7V2ValidationConfigurationServiceImpl;
 import gov.nist.hit.core.hl7v2.service.impl.HL7V2ValidationReportConverterImpl;
 import gov.nist.hit.core.service.ResourceLoader;
 import gov.nist.hit.core.service.exception.ProfileParserException;
@@ -56,6 +58,11 @@ public class GVTWebBeanConfig {
 	@Bean
 	public HL7V2MessageParser hl7v2MessageParser() {
 		return new HL7V2MessageParserImpl();
+	}
+	
+	@Bean
+	public HL7V2ValidationConfigurationService hL7V2ValidationConfigurationService() {
+		return new HL7V2ValidationConfigurationServiceImpl();
 	}
 
 	// XML specific
